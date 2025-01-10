@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Updated import
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Use HashRouter
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Signup from './pages/Signup';
