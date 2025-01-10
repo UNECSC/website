@@ -1,0 +1,31 @@
+/* Content container */
+.content {
+    max-width: 800px;
+    margin: 120px auto 40px;
+    padding: 2em;
+    background-color: rgba(26, 26, 26, 0.9);
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff00;
+    box-sizing: border-box;
+    text-align: center;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Transition properties */
+    overflow: hidden;
+    max-height: 1000px; /* Ensure this value is high enough to fit content */
+    opacity: 1;
+}
+
+.content.collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #00ff00;
+}

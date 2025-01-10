@@ -1,0 +1,31 @@
+.content {
+  color: #0f0;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 1;
+  background-color: #1a1a1ae6;
+  border: 1px solid #0f0;
+  border-radius: 8px;
+  max-width: 800px;
+  max-height: 1000px;
+  margin: 120px auto 40px;
+  padding: 2em;
+  transition: max-height .5s, opacity .5s;
+  overflow: hidden;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.content.collapsed {
+  opacity: 0;
+  border: none;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.content h2 {
+  color: #0f0;
+  margin-top: 0;
+  font-size: 2em;
+}
+/*# sourceMappingURL=index.41dea57b.css.map */

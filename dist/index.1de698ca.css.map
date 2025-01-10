@@ -1,0 +1,1 @@
+{"mappings":"AACA","sources":["js/styles/general.css"],"sourcesContent":["/* General styling */\r\nbody {\r\n    margin: 0;\r\n    font-family: 'Hack', monospace;\r\n    background-color: #0d0d0d;\r\n    color: #00ff00;\r\n}\r\n"],"names":[],"version":3,"file":"index.1de698ca.css.map","sourceRoot":"/__parcel_source_root/"}
