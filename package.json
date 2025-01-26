@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "serve dist",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --no-cache"
   },
   "browserslist": [
     ">1%",
