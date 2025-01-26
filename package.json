@@ -2,9 +2,8 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "serve dist",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "./node_modules/.bin/parcel build index.html",
+    "start": "serve dist"
   },
   "browserslist": [
     ">1%",
@@ -27,6 +26,10 @@
       "distDir": "dist",
       "sourceMap": true,
       "publicUrl": "./"
+    },
+    "engines": {
+      "node": "18.x",
+      "npm": "9.x"
     }
   }
 }
