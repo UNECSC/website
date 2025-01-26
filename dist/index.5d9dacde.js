@@ -34857,6 +34857,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
 function Events() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "content",
@@ -34865,20 +34866,350 @@ function Events() {
                 children: "Events"
             }, void 0, false, {
                 fileName: "js/pages/Events.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Upcoming events will be listed here."
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "ctf-section",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "cyber-box",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Capture The Flag"
+                            }, void 0, false, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "glowing-text",
+                                children: "Duration: 1 Week Monthly"
+                            }, void 0, false, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "js/pages/Events.js",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid-container",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "ctf-structure",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                        children: "Event Structure:"
+                                    }, void 0, false, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 18,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "cyber-list",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                                        children: "Day 1:"
+                                                    }, void 0, false, {
+                                                        fileName: "js/pages/Events.js",
+                                                        lineNumber: 20,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    " Main challenges released"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 20,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                                        children: "Day 5:"
+                                                    }, void 0, false, {
+                                                        fileName: "js/pages/Events.js",
+                                                        lineNumber: 21,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    " Bonus challenge unlocked (2x points)"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 21,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                                        children: "Day 7:"
+                                                    }, void 0, false, {
+                                                        fileName: "js/pages/Events.js",
+                                                        lineNumber: 22,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    " Competition ends at midnight"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 22,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 19,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "ctf-topics",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                        children: "Challenge Categories:"
+                                    }, void 0, false, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 27,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "topic-grid",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "topic-item",
+                                                children: "\uD83D\uDD10 Cryptography"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 29,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "topic-item",
+                                                children: "\uD83C\uDF10 Web Exploitation"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 30,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "topic-item",
+                                                children: "\uD83D\uDD11 Password Cracking"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 31,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "topic-item",
+                                                children: "\uD83D\uDCA5 Buffer Overflows"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 32,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "topic-item",
+                                                children: "\uD83D\uDD75\uFE0F OSINT Challenges"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 33,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "topic-item",
+                                                children: "\u26A1 Bruteforce Attacks"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 34,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 28,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 26,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "js/pages/Events.js",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "prizes-section",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "Prizes:"
+                            }, void 0, false, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 40,
+                                columnNumber: 3
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "prize-tier",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "tier",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: "1st Place:"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 43,
+                                                columnNumber: 7
+                                            }, this),
+                                            " TO BE ANNOUNCED"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 42,
+                                        columnNumber: 5
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "tier",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: "2nd Place:"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 46,
+                                                columnNumber: 7
+                                            }, this),
+                                            " TO BE ANNOUNCED"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 45,
+                                        columnNumber: 5
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "tier cyber-glitch",
+                                        style: {
+                                            borderColor: "#ff00ff"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: "Annual Grand Prize:"
+                                            }, void 0, false, {
+                                                fileName: "js/pages/Events.js",
+                                                lineNumber: 49,
+                                                columnNumber: 7
+                                            }, this),
+                                            " TO BE ANNOUNCED"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 48,
+                                        columnNumber: 5
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 41,
+                                columnNumber: 3
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "js/pages/Events.js",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "ctf-rules",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "Competition Rules:"
+                            }, void 0, false, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 55,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                className: "cyber-list",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: "Solo or teams"
+                                    }, void 0, false, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 57,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: "No use of tools that may damage/disrupt infrastructure"
+                                    }, void 0, false, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 58,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: "No flag sharing/bruteforcing infrastructure"
+                                    }, void 0, false, {
+                                        fileName: "js/pages/Events.js",
+                                        lineNumber: 59,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "js/pages/Events.js",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "js/pages/Events.js",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "ctf-actions",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/highscores",
+                            className: "cyber-button",
+                            children: "View Current Leaderboard \u2794"
+                        }, void 0, false, {
+                            fileName: "js/pages/Events.js",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "js/pages/Events.js",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "disclaimer",
+                        children: "* Registration opens 1 week before start"
+                    }, void 0, false, {
+                        fileName: "js/pages/Events.js",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "js/pages/Events.js",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "js/pages/Events.js",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -34892,7 +35223,7 @@ $RefreshReg$(_c, "Events");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9OO9M":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"9OO9M":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$facf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

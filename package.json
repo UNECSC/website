@@ -2,18 +2,19 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "serve dist",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "postcss-load-config": "^6.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "serve": "^14.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
@@ -22,10 +23,10 @@
     "process": "^0.11.10"
   },
   "targets": {
-  "default": {
-    "distDir": "dist",
-    "sourceMap": true
+    "default": {
+      "distDir": "dist",
+      "sourceMap": true,
+      "publicUrl": "./"
+    }
   }
-}
-
 }

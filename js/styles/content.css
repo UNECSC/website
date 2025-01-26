@@ -10,10 +10,10 @@
     box-shadow: 0 0 10px #00ff00;
     box-sizing: border-box;
     text-align: center;
-    transition: max-height 0.5s ease, opacity 0.5s ease; /* Transition properties */
-    overflow: hidden;
-    max-height: 1000px; /* Ensure this value is high enough to fit content */
+    /* Remove max-height and overflow */
     opacity: 1;
+    /* Add minimum height for better spacing */
+    min-height: 80vh;
 }
 
 .content.collapsed {
@@ -29,3 +29,96 @@
     font-size: 2em;
     color: #00ff00;
 }
+/* styles/events.css */
+.ctf-section {
+    border: 1px solid #00ff00;
+    padding: 2rem;
+    margin: 2rem 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .cyber-box {
+    border: 2px solid #00ff00;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 5px #00ff00;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .topic-item {
+    padding: 1rem;
+    border: 1px solid #00ff00;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .topic-item:hover {
+    background: rgba(0, 255, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .cyber-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .cyber-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #00ff00;
+  }
+  
+  .prize-tier {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .tier {
+    padding: 1rem;
+    background: rgba(0, 255, 0, 0.05);
+    border-left: 3px solid #00ff00;
+  }
+  
+  .cyber-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cyber-button:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 15px #00ff00;
+  }
+  
+  .disclaimer {
+    opacity: 0.7;
+    font-size: 0.9em;
+    margin-top: 2rem;
+  }
+  
+  @keyframes glitch {
+    0% { text-shadow: 2px 0 #ff00ff; }
+    50% { text-shadow: -2px 0 #00ffff; }
+    100% { text-shadow: 2px 0 #ff00ff; }
+  }
+  
+  .cyber-glitch {
+    animation: glitch 1s infinite;
+    color: #00ff00;
+  }
