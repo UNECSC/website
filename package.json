@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "build": "./node_modules/.bin/parcel build index.html",
+    "build": "npx parcel build index.html",
     "start": "serve dist"
   },
   "browserslist": [
@@ -10,26 +10,31 @@
     "last 2 versions",
     "not dead"
   ],
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
   "dependencies": {
+    "@parcel/transformer-js": "^2.13.3",
+    "@parcel/transformer-react-refresh-wrap": "^2.13.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "serve": "^14.2.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "parcel": "^2.13.3",
-    "postcss": "^8.4.49"
+    "autoprefixer": "10.4.20",
+    "parcel": "2.13.3",
+    "postcss": "8.4.49"
   },
   "targets": {
     "default": {
       "distDir": "dist",
       "sourceMap": true,
-      "publicUrl": "./"
-    },
-    "engines": {
-      "node": "18.x",
-      "npm": "9.x"
+      "publicUrl": "./",
+      "context": "browser",
+      "outputFormat": "global",
+      "includeNodeModules": true
     }
   }
 }

@@ -1,4 +1,3 @@
-// frontend/js/index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Updated import
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Use HashRouter
