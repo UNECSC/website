@@ -19,7 +19,7 @@ function Events() {
             <ul className="cyber-list">
               <li><strong>Day 1:</strong> Main challenges released</li>
               <li><strong>Day 5:</strong> Bonus challenge unlocked (2x points)</li>
-              <li><strong>Day 7:</strong> Competition ends at midnight</li>
+              <li><strong>Day 7:</strong> Competition ends at 11:59PM AEST</li>
             </ul>
           </div>
 
