@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import Signup from './pages/Signup';
 import Contact from './pages/Contact';
+import Highscores from './pages/Highscores'; 
 import Content from './content';
 import AnimatedBG from './components/AnimatedBG';
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/highscores" element={<Highscores />} />
           </Routes>
         </Content>
       </Router>

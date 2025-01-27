@@ -75,22 +75,6 @@
   padding: 1rem;
 }
 
-.cyber-button {
-  color: #0f0;
-  border: 2px solid #0f0;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  transition: all .3s;
-  display: inline-block;
-}
-
-.cyber-button:hover {
-  color: #000;
-  background: #0f0;
-  box-shadow: 0 0 15px #0f0;
-}
-
 @keyframes glitch {
   0% {
     text-shadow: 2px 0 #f0f;
@@ -394,5 +378,71 @@
   opacity: .7;
   margin-top: 2rem;
   font-size: .9em;
+}
+
+.highscores {
+  color: #00ff9d;
+  background: #000;
+  min-height: 70vh;
+  font-family: Courier New, monospace;
+}
+
+.terminal-container {
+  background: #000000e6;
+  border: 2px solid #00ff9d;
+  border-radius: 4px;
+  max-width: 800px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.terminal-output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.cursor {
+  opacity: 0;
+  animation: 1s infinite blink;
+}
+
+.cursor.visible {
+  opacity: 1;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.highscores-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cyber-button {
+  color: #00ff9d;
+  border: 2px solid #00ff9d;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.cyber-button:hover {
+  color: #000;
+  background: #00ff9d;
+  box-shadow: 0 0 15px #00ff9d;
 }
 /*# sourceMappingURL=index.41dea57b.css.map */

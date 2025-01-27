@@ -35634,7 +35634,7 @@ function Signup() {
                             className: "cyber-button mega-button",
                             target: "_blank",
                             rel: "noopener noreferrer",
-                            children: "Secure Your Membership Now"
+                            children: "Sign Up Now"
                         }, void 0, false, {
                             fileName: "js/pages/Signup.js",
                             lineNumber: 60,
@@ -61814,7 +61814,7 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-brands-svg-icons":"14OGV","@fortawesome/free-solid-svg-icons":"5lkdy"}],"14OGV":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-brands-svg-icons":"14OGV","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"14OGV":[function(require,module,exports,__globalThis) {
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

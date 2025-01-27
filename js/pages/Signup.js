@@ -63,7 +63,7 @@ function Signup() {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            Secure Your Membership Now
+            Sign Up Now
           </a>
           <p className="disclaimer">
             You'll be redirected to our secure TidyHQ portal
