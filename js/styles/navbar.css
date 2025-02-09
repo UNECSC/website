@@ -23,6 +23,8 @@
 /* Remove any additional title animations */
 .navbar h1::after {
   content: '';
+  position: relative;
+    z-index: 20; 
 }
 
 /* Dropdown Menu Container */
