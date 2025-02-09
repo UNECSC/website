@@ -1,22 +1,22 @@
 /* Content container */
 .content {
-    max-width: 800px;
-    margin: 120px auto 40px;
-    padding: 2em;
-    background-color: rgba(26, 26, 26, 0.9);
-    color: #00ff00;
-    border: 1px solid #00ff00;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #00ff00;
-    box-sizing: border-box;
-    text-align: center;
-    /* Remove max-height and overflow */
-    opacity: 1;
-    /* Add minimum height for better spacing */
-    min-height: 80vh;    
-    position: relative; /* Ensures it stacks above the background */
-    z-index: 10; 
+  max-width: 800px;
+  margin: 120px auto 40px;
+  padding: 2em;
+  background-color: rgba(26, 26, 26, 0.7); /* Reduced opacity to enhance blur */
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ff00;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 1;
+  min-height: 80vh;
+  position: relative; /* Ensures it stacks above the background */
+  z-index: 10;
+  backdrop-filter: blur(4px) brightness(0.8); /* This adds the blur effect */
 }
+
 
 .content.collapsed {
     max-height: 0;
