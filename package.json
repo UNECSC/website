@@ -2,9 +2,9 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html --no-cache"
-  },
+  "start": "npx serve -s dist",
+  "build": "npx parcel build index.html --no-cache"
+},
   "browserslist": [
     ">1%",
     "last 2 versions",
