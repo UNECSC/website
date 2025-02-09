@@ -7,7 +7,7 @@ import Events from './pages/Events';
 import Signup from './pages/Signup';
 import Contact from './pages/Contact';
 import Highscores from './pages/Highscores'; 
-import Content from './content';
+import Content from './Content';
 import AnimatedBG from './components/AnimatedBG';
 
 function App() {
