@@ -2949,108 +2949,23 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _client = require("react-dom/client"); // Updated import
+var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _reactRouterDom = require("react-router-dom"); // Use HashRouter
-var _navbar = require("./Navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _home = require("./pages/Home");
-var _homeDefault = parcelHelpers.interopDefault(_home);
-var _events = require("./pages/Events");
-var _eventsDefault = parcelHelpers.interopDefault(_events);
-var _signup = require("./pages/Signup");
-var _signupDefault = parcelHelpers.interopDefault(_signup);
-var _contact = require("./pages/Contact");
-var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _app = require("./App");
 var _appDefault = parcelHelpers.interopDefault(_app);
-function App() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
-                fileName: "js/index.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
-                            fileName: "js/index.js",
-                            lineNumber: 16,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "js/index.js",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/events",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventsDefault.default), {}, void 0, false, {
-                            fileName: "js/index.js",
-                            lineNumber: 17,
-                            columnNumber: 40
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "js/index.js",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/signup",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
-                            fileName: "js/index.js",
-                            lineNumber: 18,
-                            columnNumber: 40
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "js/index.js",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/contact",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
-                            fileName: "js/index.js",
-                            lineNumber: 19,
-                            columnNumber: 41
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "js/index.js",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "js/index.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "js/index.js",
-        lineNumber: 13,
-        columnNumber: 5
-    }, this);
-}
-_c = (0, _appDefault.default);
-const root = (0, _clientDefault.default).createRoot(document.getElementById('root')); // Updated
+const root = (0, _clientDefault.default).createRoot(document.getElementById('root'));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "js/index.js",
-    lineNumber: 26,
+    lineNumber: 6,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "App");
 
   $parcel$ReactRefreshHelpers$4874.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./Navbar":"24htN","./pages/Home":"gL33X","./pages/Events":"jg1Mr","./pages/Signup":"9OO9M","./pages/Contact":"dhI2O","./App":"7e9X2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"7e9X2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -27293,7 +27208,172 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"9xmpe":[function(require,module,exports,__globalThis) {
+},{}],"7e9X2":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a377 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a377.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _navbar = require("./Navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _dropdownMenu = require("./DropdownMenu");
+var _dropdownMenuDefault = parcelHelpers.interopDefault(_dropdownMenu);
+var _home = require("./pages/Home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
+var _events = require("./pages/Events");
+var _eventsDefault = parcelHelpers.interopDefault(_events);
+var _signup = require("./pages/Signup");
+var _signupDefault = parcelHelpers.interopDefault(_signup);
+var _contact = require("./pages/Contact");
+var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _highscores = require("./pages/Highscores");
+var _highscoresDefault = parcelHelpers.interopDefault(_highscores);
+var _content = require("./Content");
+var _contentDefault = parcelHelpers.interopDefault(_content);
+var _animatedBG = require("./components/AnimatedBG");
+var _animatedBGDefault = parcelHelpers.interopDefault(_animatedBG);
+var _s = $RefreshSig$();
+function App() {
+    _s();
+    const [contentKey, setContentKey] = (0, _react.useState)(0);
+    const handleChangeContent = (callback)=>{
+        setContentKey((prevKey)=>prevKey + 1);
+        setTimeout(()=>{
+            callback();
+        }, 500); // Duration matches the CSS transition duration
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            position: 'relative',
+            width: '100%',
+            height: '100%'
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _animatedBGDefault.default), {}, void 0, false, {
+                fileName: "js/App.js",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                        fileName: "js/App.js",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropdownMenuDefault.default), {
+                        onChangeContent: handleChangeContent
+                    }, void 0, false, {
+                        fileName: "js/App.js",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contentDefault.default), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 36,
+                                        columnNumber: 38
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 36,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/events",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventsDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 37,
+                                        columnNumber: 44
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/signup",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 38,
+                                        columnNumber: 44
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/contact",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 39,
+                                        columnNumber: 45
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/highscores",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _highscoresDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 40,
+                                        columnNumber: 48
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "js/App.js",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this)
+                    }, contentKey, false, {
+                        fileName: "js/App.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "js/App.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "js/App.js",
+        lineNumber: 24,
+        columnNumber: 5
+    }, this);
+}
+_s(App, "2i4P9mFW6v1S4gmITbuaqFTAzC0=");
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$a377.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navbar":"24htN","./DropdownMenu":"3m0kK","./pages/Home":"gL33X","./pages/Events":"jg1Mr","./pages/Signup":"9OO9M","./pages/Contact":"dhI2O","./pages/Highscores":"cYSlt","./Content":"24Pxs","./components/AnimatedBG":"9Yeri","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.28.2
  *
@@ -34678,7 +34758,7 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./styles/hamburger.css":"1XlrW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styles/navbar.css":"cly0t"}],"1XlrW":[function() {},{}],"km3Ru":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./styles/navbar.css":"cly0t","./styles/hamburger.css":"1XlrW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cly0t":[function() {},{}],"1XlrW":[function() {},{}],"km3Ru":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 var { version } = require("630b62916b1ae0e7");
@@ -34823,7 +34903,148 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"cly0t":[function() {},{}],"gL33X":[function(require,module,exports,__globalThis) {
+},{}],"3m0kK":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ea1d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ea1d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function DropdownMenu({ onChangeContent }) {
+    _s();
+    const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const dropdownRef = (0, _react.useRef)(null); // Reference for the dropdown wrapper
+    const handleLinkClick = (path)=>{
+        setIsOpen(false);
+        onChangeContent(()=>{
+            navigate(path);
+        });
+    };
+    // Attach a click listener that will close the dropdown if clicked outside
+    (0, _react.useEffect)(()=>{
+        const handleClickOutside = (event)=>{
+            // If dropdown is open and the clicked element is not inside dropdownRef, close it.
+            if (isOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) setIsOpen(false);
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        // Cleanup the event listener on component unmount
+        return ()=>{
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [
+        isOpen
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dropdown-wrapper",
+        ref: dropdownRef,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "menu-icon",
+                onClick: ()=>setIsOpen(!isOpen),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bar"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bar"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bar"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "js/DropdownMenu.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, this),
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "dropdown-menu",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        onClick: ()=>handleLinkClick('/'),
+                        children: "Home"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/events",
+                        onClick: ()=>handleLinkClick('/events'),
+                        children: "Events"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/signup",
+                        onClick: ()=>handleLinkClick('/signup'),
+                        children: "Signup"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 44,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/contact",
+                        onClick: ()=>handleLinkClick('/contact'),
+                        children: "Contact"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 45,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "js/DropdownMenu.js",
+                lineNumber: 41,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "js/DropdownMenu.js",
+        lineNumber: 34,
+        columnNumber: 5
+    }, this);
+}
+_s(DropdownMenu, "VAen4O2SdgmBboiuuhgwUxxXuh0=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = DropdownMenu;
+exports.default = DropdownMenu;
+var _c;
+$RefreshReg$(_c, "DropdownMenu");
+
+  $parcel$ReactRefreshHelpers$ea1d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gL33X":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$83f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -68469,313 +68690,7 @@ var icons = {
     faSteamSymbol
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7e9X2":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$a377 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a377.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _navbar = require("./Navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _dropdownMenu = require("./DropdownMenu");
-var _dropdownMenuDefault = parcelHelpers.interopDefault(_dropdownMenu);
-var _home = require("./pages/Home");
-var _homeDefault = parcelHelpers.interopDefault(_home);
-var _events = require("./pages/Events");
-var _eventsDefault = parcelHelpers.interopDefault(_events);
-var _signup = require("./pages/Signup");
-var _signupDefault = parcelHelpers.interopDefault(_signup);
-var _contact = require("./pages/Contact");
-var _contactDefault = parcelHelpers.interopDefault(_contact);
-var _highscores = require("./pages/Highscores");
-var _highscoresDefault = parcelHelpers.interopDefault(_highscores);
-var _content = require("./content");
-var _contentDefault = parcelHelpers.interopDefault(_content);
-var _animatedBG = require("./components/AnimatedBG");
-var _animatedBGDefault = parcelHelpers.interopDefault(_animatedBG);
-var _s = $RefreshSig$();
-function App() {
-    _s();
-    const [contentKey, setContentKey] = (0, _react.useState)(0);
-    const handleChangeContent = (callback)=>{
-        setContentKey((prevKey)=>prevKey + 1);
-        setTimeout(()=>{
-            callback();
-        }, 500); // Duration matches the CSS transition duration
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            position: 'relative',
-            width: '100%',
-            height: '100%'
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _animatedBGDefault.default), {}, void 0, false, {
-                fileName: "js/App.js",
-                lineNumber: 26,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
-                        fileName: "js/App.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropdownMenuDefault.default), {
-                        onChangeContent: handleChangeContent
-                    }, void 0, false, {
-                        fileName: "js/App.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contentDefault.default), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                    path: "/",
-                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
-                                        fileName: "js/App.js",
-                                        lineNumber: 36,
-                                        columnNumber: 38
-                                    }, void 0)
-                                }, void 0, false, {
-                                    fileName: "js/App.js",
-                                    lineNumber: 36,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                    path: "/events",
-                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventsDefault.default), {}, void 0, false, {
-                                        fileName: "js/App.js",
-                                        lineNumber: 37,
-                                        columnNumber: 44
-                                    }, void 0)
-                                }, void 0, false, {
-                                    fileName: "js/App.js",
-                                    lineNumber: 37,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                    path: "/signup",
-                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
-                                        fileName: "js/App.js",
-                                        lineNumber: 38,
-                                        columnNumber: 44
-                                    }, void 0)
-                                }, void 0, false, {
-                                    fileName: "js/App.js",
-                                    lineNumber: 38,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                    path: "/contact",
-                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
-                                        fileName: "js/App.js",
-                                        lineNumber: 39,
-                                        columnNumber: 45
-                                    }, void 0)
-                                }, void 0, false, {
-                                    fileName: "js/App.js",
-                                    lineNumber: 39,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                    path: "/highscores",
-                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _highscoresDefault.default), {}, void 0, false, {
-                                        fileName: "js/App.js",
-                                        lineNumber: 40,
-                                        columnNumber: 48
-                                    }, void 0)
-                                }, void 0, false, {
-                                    fileName: "js/App.js",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "js/App.js",
-                            lineNumber: 35,
-                            columnNumber: 11
-                        }, this)
-                    }, contentKey, false, {
-                        fileName: "js/App.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "js/App.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "js/App.js",
-        lineNumber: 24,
-        columnNumber: 5
-    }, this);
-}
-_s(App, "2i4P9mFW6v1S4gmITbuaqFTAzC0=");
-_c = App;
-exports.default = App;
-var _c;
-$RefreshReg$(_c, "App");
-
-  $parcel$ReactRefreshHelpers$a377.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navbar":"24htN","./DropdownMenu":"3m0kK","./pages/Home":"gL33X","./pages/Events":"jg1Mr","./pages/Signup":"9OO9M","./pages/Contact":"dhI2O","./pages/Highscores":"cYSlt","./content":"636LY","./components/AnimatedBG":"9Yeri","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3m0kK":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$ea1d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ea1d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-function DropdownMenu({ onChangeContent }) {
-    _s();
-    const [isOpen, setIsOpen] = (0, _react.useState)(false);
-    const navigate = (0, _reactRouterDom.useNavigate)();
-    const dropdownRef = (0, _react.useRef)(null); // Reference for the dropdown wrapper
-    const handleLinkClick = (path)=>{
-        setIsOpen(false);
-        onChangeContent(()=>{
-            navigate(path);
-        });
-    };
-    // Attach a click listener that will close the dropdown if clicked outside
-    (0, _react.useEffect)(()=>{
-        const handleClickOutside = (event)=>{
-            // If dropdown is open and the clicked element is not inside dropdownRef, close it.
-            if (isOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) setIsOpen(false);
-        };
-        document.addEventListener('mousedown', handleClickOutside);
-        // Cleanup the event listener on component unmount
-        return ()=>{
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [
-        isOpen
-    ]);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "dropdown-wrapper",
-        ref: dropdownRef,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "menu-icon",
-                onClick: ()=>setIsOpen(!isOpen),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bar"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bar"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bar"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "js/DropdownMenu.js",
-                lineNumber: 35,
-                columnNumber: 7
-            }, this),
-            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "dropdown-menu",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/",
-                        onClick: ()=>handleLinkClick('/'),
-                        children: "Home"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 42,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/events",
-                        onClick: ()=>handleLinkClick('/events'),
-                        children: "Events"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 43,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/signup",
-                        onClick: ()=>handleLinkClick('/signup'),
-                        children: "Signup"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 44,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/contact",
-                        onClick: ()=>handleLinkClick('/contact'),
-                        children: "Contact"
-                    }, void 0, false, {
-                        fileName: "js/DropdownMenu.js",
-                        lineNumber: 45,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "js/DropdownMenu.js",
-                lineNumber: 41,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "js/DropdownMenu.js",
-        lineNumber: 34,
-        columnNumber: 5
-    }, this);
-}
-_s(DropdownMenu, "VAen4O2SdgmBboiuuhgwUxxXuh0=", false, function() {
-    return [
-        (0, _reactRouterDom.useNavigate)
-    ];
-});
-_c = DropdownMenu;
-exports.default = DropdownMenu;
-var _c;
-$RefreshReg$(_c, "DropdownMenu");
-
-  $parcel$ReactRefreshHelpers$ea1d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cYSlt":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cYSlt":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5653 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -68886,11 +68801,11 @@ $RefreshReg$(_c, "Highscores");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"636LY":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$ebf7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"24Pxs":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8e9c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ebf7.prelude(module);
+$parcel$ReactRefreshHelpers$8e9c.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -68914,7 +68829,7 @@ function Content({ children }) {
         className: `content ${isCollapsed ? 'collapsed' : ''}`,
         children: children
     }, void 0, false, {
-        fileName: "js/content.js",
+        fileName: "js/Content.js",
         lineNumber: 14,
         columnNumber: 5
     }, this);
@@ -68925,7 +68840,7 @@ exports.default = Content;
 var _c;
 $RefreshReg$(_c, "Content");
 
-  $parcel$ReactRefreshHelpers$ebf7.postlude(module);
+  $parcel$ReactRefreshHelpers$8e9c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
