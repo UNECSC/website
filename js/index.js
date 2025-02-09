@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import Signup from './pages/Signup';
 import Contact from './pages/Contact';
+import App from './App';
 
 function App() {
   return (

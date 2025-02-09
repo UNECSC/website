@@ -2962,12 +2962,14 @@ var _signup = require("./pages/Signup");
 var _signupDefault = parcelHelpers.interopDefault(_signup);
 var _contact = require("./pages/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _app = require("./App");
+var _appDefault = parcelHelpers.interopDefault(_app);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
                 fileName: "js/index.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -2976,20 +2978,8 @@ function App() {
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                             fileName: "js/index.js",
-                            lineNumber: 15,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "js/index.js",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/events",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventsDefault.default), {}, void 0, false, {
-                            fileName: "js/index.js",
                             lineNumber: 16,
-                            columnNumber: 40
+                            columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "js/index.js",
@@ -2997,8 +2987,8 @@ function App() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/signup",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
+                        path: "/events",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventsDefault.default), {}, void 0, false, {
                             fileName: "js/index.js",
                             lineNumber: 17,
                             columnNumber: 40
@@ -3009,35 +2999,47 @@ function App() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/contact",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                        path: "/signup",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
                             fileName: "js/index.js",
                             lineNumber: 18,
-                            columnNumber: 41
+                            columnNumber: 40
                         }, void 0)
                     }, void 0, false, {
                         fileName: "js/index.js",
                         lineNumber: 18,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/contact",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                            fileName: "js/index.js",
+                            lineNumber: 19,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "js/index.js",
+                        lineNumber: 19,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "js/index.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "js/index.js",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
-_c = App;
+_c = (0, _appDefault.default);
 const root = (0, _clientDefault.default).createRoot(document.getElementById('root')); // Updated
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "js/index.js",
-    lineNumber: 25,
+    lineNumber: 26,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3048,7 +3050,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./Navbar":"24htN","./pages/Home":"gL33X","./pages/Events":"jg1Mr","./pages/Signup":"9OO9M","./pages/Contact":"dhI2O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./Navbar":"24htN","./pages/Home":"gL33X","./pages/Events":"jg1Mr","./pages/Signup":"9OO9M","./pages/Contact":"dhI2O","./App":"7e9X2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -34545,26 +34547,42 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$a7c3.prelude(module);
 
 try {
-// frontend/js/navbar.js
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _navbarCss = require("./styles/navbar.css");
+var _hamburgerCss = require("./styles/hamburger.css");
 var _s = $RefreshSig$();
 function Navbar() {
     _s();
     const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const navRef = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        const handleClickOutside = (event)=>{
+            // If dropdown is open and the clicked target is not within the navbar, close it.
+            if (isOpen && navRef.current && !navRef.current.contains(event.target)) setIsOpen(false);
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        // Clean up the event listener on component unmount
+        return ()=>{
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [
+        isOpen
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         className: "navbar",
+        ref: navRef,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "UNECSC"
             }, void 0, false, {
                 fileName: "js/Navbar.js",
-                lineNumber: 10,
-                columnNumber: 13
+                lineNumber: 28,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: `hamburger ${isOpen ? 'open' : ''}`,
@@ -34574,31 +34592,31 @@ function Navbar() {
                         className: "bar"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 15,
-                        columnNumber: 17
+                        lineNumber: 33,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "bar"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 16,
-                        columnNumber: 17
+                        lineNumber: 34,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "bar"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 17,
-                        columnNumber: 17
+                        lineNumber: 35,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "js/Navbar.js",
-                lineNumber: 11,
-                columnNumber: 13
+                lineNumber: 29,
+                columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `dropdown ${isOpen ? 'open' : ''}`,
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "dropdown-menu",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/",
@@ -34606,8 +34624,8 @@ function Navbar() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 20,
-                        columnNumber: 17
+                        lineNumber: 39,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/events",
@@ -34615,8 +34633,8 @@ function Navbar() {
                         children: "Events"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 21,
-                        columnNumber: 17
+                        lineNumber: 40,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/signup",
@@ -34624,8 +34642,8 @@ function Navbar() {
                         children: "Signup"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 22,
-                        columnNumber: 17
+                        lineNumber: 41,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/contact",
@@ -34633,23 +34651,23 @@ function Navbar() {
                         children: "Contact"
                     }, void 0, false, {
                         fileName: "js/Navbar.js",
-                        lineNumber: 23,
-                        columnNumber: 17
+                        lineNumber: 42,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "js/Navbar.js",
-                lineNumber: 19,
-                columnNumber: 13
+                lineNumber: 38,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "js/Navbar.js",
-        lineNumber: 9,
-        columnNumber: 9
+        lineNumber: 27,
+        columnNumber: 5
     }, this);
 }
-_s(Navbar, "+sus0Lb0ewKHdwiUhiTAJFoFyQ0=");
+_s(Navbar, "l0U6Il7oN5GytDaGox5hHTNIWBw=");
 _c = Navbar;
 exports.default = Navbar;
 var _c;
@@ -34660,7 +34678,7 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./styles/hamburger.css":"1XlrW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styles/navbar.css":"cly0t"}],"1XlrW":[function() {},{}],"km3Ru":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 var { version } = require("630b62916b1ae0e7");
@@ -34805,7 +34823,7 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"gL33X":[function(require,module,exports,__globalThis) {
+},{}],"cly0t":[function() {},{}],"gL33X":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$83f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -68451,6 +68469,552 @@ var icons = {
     faSteamSymbol
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","fSTlA","1Z4Rq"], "1Z4Rq", "parcelRequire94c2")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7e9X2":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a377 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a377.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _navbar = require("./Navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _dropdownMenu = require("./DropdownMenu");
+var _dropdownMenuDefault = parcelHelpers.interopDefault(_dropdownMenu);
+var _home = require("./pages/Home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
+var _events = require("./pages/Events");
+var _eventsDefault = parcelHelpers.interopDefault(_events);
+var _signup = require("./pages/Signup");
+var _signupDefault = parcelHelpers.interopDefault(_signup);
+var _contact = require("./pages/Contact");
+var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _highscores = require("./pages/Highscores");
+var _highscoresDefault = parcelHelpers.interopDefault(_highscores);
+var _content = require("./content");
+var _contentDefault = parcelHelpers.interopDefault(_content);
+var _animatedBG = require("./components/AnimatedBG");
+var _animatedBGDefault = parcelHelpers.interopDefault(_animatedBG);
+var _s = $RefreshSig$();
+function App() {
+    _s();
+    const [contentKey, setContentKey] = (0, _react.useState)(0);
+    const handleChangeContent = (callback)=>{
+        setContentKey((prevKey)=>prevKey + 1);
+        setTimeout(()=>{
+            callback();
+        }, 500); // Duration matches the CSS transition duration
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            position: 'relative',
+            width: '100%',
+            height: '100%'
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _animatedBGDefault.default), {}, void 0, false, {
+                fileName: "js/App.js",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                        fileName: "js/App.js",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropdownMenuDefault.default), {
+                        onChangeContent: handleChangeContent
+                    }, void 0, false, {
+                        fileName: "js/App.js",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contentDefault.default), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 36,
+                                        columnNumber: 38
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 36,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/events",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventsDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 37,
+                                        columnNumber: 44
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/signup",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 38,
+                                        columnNumber: 44
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/contact",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 39,
+                                        columnNumber: 45
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/highscores",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _highscoresDefault.default), {}, void 0, false, {
+                                        fileName: "js/App.js",
+                                        lineNumber: 40,
+                                        columnNumber: 48
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "js/App.js",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "js/App.js",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this)
+                    }, contentKey, false, {
+                        fileName: "js/App.js",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "js/App.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "js/App.js",
+        lineNumber: 24,
+        columnNumber: 5
+    }, this);
+}
+_s(App, "2i4P9mFW6v1S4gmITbuaqFTAzC0=");
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$a377.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navbar":"24htN","./DropdownMenu":"3m0kK","./pages/Home":"gL33X","./pages/Events":"jg1Mr","./pages/Signup":"9OO9M","./pages/Contact":"dhI2O","./pages/Highscores":"cYSlt","./content":"636LY","./components/AnimatedBG":"9Yeri","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3m0kK":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ea1d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ea1d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function DropdownMenu({ onChangeContent }) {
+    _s();
+    const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const dropdownRef = (0, _react.useRef)(null); // Reference for the dropdown wrapper
+    const handleLinkClick = (path)=>{
+        setIsOpen(false);
+        onChangeContent(()=>{
+            navigate(path);
+        });
+    };
+    // Attach a click listener that will close the dropdown if clicked outside
+    (0, _react.useEffect)(()=>{
+        const handleClickOutside = (event)=>{
+            // If dropdown is open and the clicked element is not inside dropdownRef, close it.
+            if (isOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) setIsOpen(false);
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        // Cleanup the event listener on component unmount
+        return ()=>{
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [
+        isOpen
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dropdown-wrapper",
+        ref: dropdownRef,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "menu-icon",
+                onClick: ()=>setIsOpen(!isOpen),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bar"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bar"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bar"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "js/DropdownMenu.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, this),
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "dropdown-menu",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        onClick: ()=>handleLinkClick('/'),
+                        children: "Home"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/events",
+                        onClick: ()=>handleLinkClick('/events'),
+                        children: "Events"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/signup",
+                        onClick: ()=>handleLinkClick('/signup'),
+                        children: "Signup"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 44,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/contact",
+                        onClick: ()=>handleLinkClick('/contact'),
+                        children: "Contact"
+                    }, void 0, false, {
+                        fileName: "js/DropdownMenu.js",
+                        lineNumber: 45,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "js/DropdownMenu.js",
+                lineNumber: 41,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "js/DropdownMenu.js",
+        lineNumber: 34,
+        columnNumber: 5
+    }, this);
+}
+_s(DropdownMenu, "VAen4O2SdgmBboiuuhgwUxxXuh0=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = DropdownMenu;
+exports.default = DropdownMenu;
+var _c;
+$RefreshReg$(_c, "DropdownMenu");
+
+  $parcel$ReactRefreshHelpers$ea1d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cYSlt":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$5653 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5653.prelude(module);
+
+try {
+// /js/pages/Highscores.js
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function Highscores() {
+    _s();
+    console.log('Highscores component loaded');
+    const [displayText, setDisplayText] = (0, _react.useState)('');
+    const [currentIndex, setCurrentIndex] = (0, _react.useState)(0);
+    const [showCursor, setShowCursor] = (0, _react.useState)(true);
+    const highscoresData = `
+=== CTF HIGHSCORES ===
+
+1. [null] - 0 pts
+2. [null] - 0 pts
+3. [null] - 0 pts
+4. [null] - 0 pts
+5. [null] - 0 pts
+
+Last Updated: 01-27-2025
+`;
+    (0, _react.useEffect)(()=>{
+        const typingInterval = setInterval(()=>{
+            if (currentIndex < highscoresData.length) {
+                setDisplayText((prev)=>prev + highscoresData[currentIndex]);
+                setCurrentIndex((prev)=>prev + 1);
+            } else {
+                clearInterval(typingInterval);
+                // Start cursor blink after typing completes
+                setInterval(()=>{
+                    setShowCursor((prev)=>!prev);
+                }, 500);
+            }
+        }, 50); // Typing speed
+        return ()=>clearInterval(typingInterval);
+    }, [
+        currentIndex
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "content highscores",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "terminal-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
+                    className: "terminal-output",
+                    children: [
+                        displayText,
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: `cursor ${showCursor ? 'visible' : ''}`,
+                            children: "|"
+                        }, void 0, false, {
+                            fileName: "js/pages/Highscores.js",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "js/pages/Highscores.js",
+                    lineNumber: 43,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "js/pages/Highscores.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "highscores-actions",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/events",
+                    className: "cyber-button",
+                    children: "\u2190 Return to Events"
+                }, void 0, false, {
+                    fileName: "js/pages/Highscores.js",
+                    lineNumber: 50,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "js/pages/Highscores.js",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "js/pages/Highscores.js",
+        lineNumber: 41,
+        columnNumber: 5
+    }, this);
+}
+_s(Highscores, "ZIcQxbAXAI+TpgTJ+zTnABWmlf8=");
+_c = Highscores;
+exports.default = Highscores;
+var _c;
+$RefreshReg$(_c, "Highscores");
+
+  $parcel$ReactRefreshHelpers$5653.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"636LY":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ebf7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ebf7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+function Content({ children }) {
+    _s();
+    const [isCollapsed, setIsCollapsed] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        if (isCollapsed) {
+            const timer = setTimeout(()=>setIsCollapsed(false), 500); // Match the CSS transition duration
+            return ()=>clearTimeout(timer);
+        }
+    }, [
+        isCollapsed
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `content ${isCollapsed ? 'collapsed' : ''}`,
+        children: children
+    }, void 0, false, {
+        fileName: "js/content.js",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_s(Content, "Etu4cZbjAooe1WuDkeHmL1u9MYI=");
+_c = Content;
+exports.default = Content;
+var _c;
+$RefreshReg$(_c, "Content");
+
+  $parcel$ReactRefreshHelpers$ebf7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9Yeri":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$d99c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d99c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _animatedBGCss = require("../styles/animatedBG.css");
+var _s = $RefreshSig$();
+const AnimatedBG = ()=>{
+    _s();
+    const canvasRef = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        // Set canvas dimensions
+        canvas.width = width;
+        canvas.height = height;
+        // Matrix configuration
+        const fontSize = 14;
+        const columns = Math.floor(width / fontSize);
+        const drops = Array(columns).fill(1);
+        // Draw the matrix effect
+        const drawMatrix = ()=>{
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'; // Creates fading effect
+            ctx.fillRect(0, 0, width, height);
+            ctx.fillStyle = '#00FF00'; // Matrix green color
+            ctx.font = `${fontSize}px monospace`;
+            drops.forEach((y, x)=>{
+                const text = Math.random() > 0.5 ? '0' : '1'; // Randomly choose 0 or 1
+                const xPos = x * fontSize;
+                const yPos = y * fontSize;
+                ctx.fillText(text, xPos, yPos);
+                // Reset drop to start from the top with some randomness
+                if (y * fontSize > height && Math.random() > 0.975) drops[x] = 0;
+                drops[x]++;
+            });
+            // Introduce a delay before the next frame
+            setTimeout(()=>{
+                requestAnimationFrame(drawMatrix);
+            }, 100); // Adjust the delay (in ms) to control the speed
+        };
+        drawMatrix();
+        // Handle window resize
+        const resizeHandler = ()=>{
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            // Recalculate columns and reset drops
+            const newColumns = Math.floor(width / fontSize);
+            drops.length = newColumns;
+            drops.fill(1);
+        };
+        window.addEventListener('resize', resizeHandler);
+        // Cleanup event listener on unmount
+        return ()=>window.removeEventListener('resize', resizeHandler);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("canvas", {
+        ref: canvasRef,
+        className: "animated-bg"
+    }, void 0, false, {
+        fileName: "js/components/AnimatedBG.js",
+        lineNumber: 72,
+        columnNumber: 10
+    }, undefined);
+};
+_s(AnimatedBG, "UJgi7ynoup7eqypjnwyX/s32POg=");
+_c = AnimatedBG;
+exports.default = AnimatedBG;
+var _c;
+$RefreshReg$(_c, "AnimatedBG");
+
+  $parcel$ReactRefreshHelpers$d99c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/animatedBG.css":"9bc27","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9bc27":[function() {},{}]},["aQL8O","fSTlA","1Z4Rq"], "1Z4Rq", "parcelRequire94c2")
 
 //# sourceMappingURL=index.5d9dacde.js.map

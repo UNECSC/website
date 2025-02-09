@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './styles/animatedBG.css'; // Import the CSS file
+import '../styles/animatedBG.css'; 
 
 const AnimatedBG = () => {
   const canvasRef = useRef(null);
@@ -42,7 +42,10 @@ const AnimatedBG = () => {
         drops[x]++;
       });
 
-      requestAnimationFrame(drawMatrix);
+      // Introduce a delay before the next frame
+      setTimeout(() => {
+        requestAnimationFrame(drawMatrix);
+      }, 100); // Adjust the delay (in ms) to control the speed
     };
 
     drawMatrix();
