@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="content">
       <div className="cyber-border animated">
-        <h2>UNE Cyber Security Club</h2>
+        <h2>University of New England Cyber Security Club</h2>
         <p className="cyber-subtitle">Forging Digital Defenders Since 2024</p>
         
         <div className="feature-grid">

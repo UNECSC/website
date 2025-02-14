@@ -11,27 +11,25 @@
 }
 
 /* Site Title */
+/* Revised Site Title (Impact, no glow, sharp text-shadow) */
 .navbar h1 {
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2.2rem;
-  color: #00ff90;
   margin: 0;
-  /* neon glow effect with static text-shadow */
-  text-shadow:
-    0 0 5px   #00ff90,
-    0 0 10px  #00ff90,
-    0 0 20px  #00ff90,
-    0 0 40px  #00ff90;
+  color: #00ff90;
+  /* Crisp, sharp drop shadow for legibility (no glow) */
+  text-shadow: 1px 1px 0 #000;
 }
 
-/* Remove any animations or pseudo-elements if not needed */
+/* Remove any extra pseudo-element animations if not needed */
 .navbar h1::after {
   content: '';
   position: relative;
   z-index: 20;
 }
+
 
 
 /* Dropdown Menu Container */
