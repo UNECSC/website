@@ -1,14 +1,14 @@
+
+/* /styles/animatedBG.css */
 .animated-bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -100; /* Ensure it is deeply behind other elements */
-    background-size: 400% 400%;
-    animation: bgAnimation 10s ease infinite;
-    pointer-events: none; /* Prevents interaction issues */
-}
+    z-index: -9999; /* behind everything else */
+    pointer-events: none; /* don’t block user clicks */
+  }
+  
+  
 
 
 /* Keyframes for the background animation */

@@ -1,3 +1,4 @@
+// App.js
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -17,19 +18,17 @@ function App() {
     setContentKey((prevKey) => prevKey + 1);
     setTimeout(() => {
       callback();
-    }, 500); // Matches CSS transition duration
+    }, 500); // Matches your CSS transition duration
   };
 
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
-      {/* Background Wrapper - Always behind content */}
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -100 }}>
+    <Router>
+      <div style={{ position: 'relative', minHeight: '100vh' }}>
+        {/* Our matrix BG behind everything */}
         <AnimatedBG />
-      </div>
 
-      {/* Main Content Wrapper - Ensures UI is above background */}
-      <div style={{ position: 'relative', zIndex: 1 }}>
-        <Router>
+        {/* Foreground content */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
           <Navbar />
           <DropdownMenu onChangeContent={handleChangeContent} />
 
@@ -42,9 +41,9 @@ function App() {
               <Route path="/highscores" element={<Highscores />} />
             </Routes>
           </Content>
-        </Router>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
