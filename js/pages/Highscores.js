@@ -11,7 +11,7 @@ function Highscores() {
   const highscoresData = `
 === CTF HIGHSCORES ===
 
-1. [null] - 0 pts
+1. [1337kitt3n] - 69 pts
 2. [null] - 0 pts
 3. [null] - 0 pts
 4. [null] - 0 pts
