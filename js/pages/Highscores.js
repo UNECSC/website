@@ -20,6 +20,10 @@ function Highscores() {
 Last Updated: 01-27-2025
 `;
 
+//1337kitt3n was here.
+//Hmmm how can I get on that highscores...?
+//UNECSC{l3f7mym4rk}
+
   useEffect(() => {
     const typingInterval = setInterval(() => {
       if (currentIndex < highscoresData.length) {
