@@ -45,7 +45,7 @@ function Contact() {
             <FontAwesomeIcon icon={faDiscord} className="discord-icon" />
             <h3>Discord Server</h3>
             <a 
-              href="https://discord.gg/unecsc" 
+              href="https://discord.gg/CMpE4hZ3zy" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="cyber-button discord-button"
