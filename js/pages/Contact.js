@@ -16,28 +16,36 @@ function Contact() {
         <div className="executive-contacts">
           <h3><FontAwesomeIcon icon={faUserTie} /> Executive Committee</h3>
           <ul className="cyber-list">
-            <li>
-              <FontAwesomeIcon icon={faUserTie} className="icon-glitch" />
-              <span className="role">President:</span>
-              <a href="mailto:president@unecsc.com" className="email-link">
-                Cody Williams - president@unecsc.com
-              </a>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faFileSignature} className="icon-glitch" />
-              <span className="role">Secretary:</span>
-              <a href="mailto:secretary@unecsc.com" className="email-link">
-                Lachlan Jarret - secretary@unecsc.com
-              </a>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCoins} className="icon-glitch" />
-              <span className="role">Treasurer:</span>
-              <a href="mailto:treasurer@unecsc.com" className="email-link">
-                Kevin Teong - treasurer@unecsc.com
-              </a>
-            </li>
-          </ul>
+  <li>
+    <FontAwesomeIcon icon={faUserTie} className="icon-glitch" />
+    <span className="role">President:</span>
+    <a href="mailto:president@unecsc.com" className="email-link">
+      Cody Williams - president@unecsc.com
+    </a>
+  </li>
+  <li>
+    <FontAwesomeIcon icon={faUserTie} className="icon-glitch" />
+    <span className="role">Vice President:</span>
+    <a href="mailto:vicepresident@unecsc.com" className="email-link">
+      James Anstee - vicepresident@unecsc.com
+    </a>
+  </li>
+  <li>
+    <FontAwesomeIcon icon={faFileSignature} className="icon-glitch" />
+    <span className="role">Secretary:</span>
+    <a href="mailto:secretary@unecsc.com" className="email-link">
+      Lachlan Jarret - secretary@unecsc.com
+    </a>
+  </li>
+  <li>
+    <FontAwesomeIcon icon={faCoins} className="icon-glitch" />
+    <span className="role">Treasurer:</span>
+    <a href="mailto:treasurer@unecsc.com" className="email-link">
+      Kevin Teong - treasurer@unecsc.com
+    </a>
+  </li>
+</ul>
+
         </div>
 
         <div className="discord-cta">
