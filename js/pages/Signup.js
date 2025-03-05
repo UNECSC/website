@@ -54,22 +54,35 @@ function Signup() {
       </div>
 
       <div className="cta-section">
-        <div className="cta-box">
-          <FontAwesomeIcon icon={faShieldHalved} className="cta-icon" />
-          <h3 className="cyber-glitch">Ready to Join the Club?</h3>
-          <a 
-            href="https://unecsc.tidyhq.com/" 
-            className="cyber-button mega-button"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            Sign Up Now
-          </a>
-          <p className="disclaimer">
-            You'll be redirected to our secure TidyHQ portal
-          </p>
-        </div>
-      </div>
+  <div className="cta-box">
+    <FontAwesomeIcon icon={faShieldHalved} className="cta-icon" />
+    <h3 className="cyber-glitch">Ready to Join the Club?</h3>
+
+    <p>Are you a UNE Student/Staff member?</p>
+    <p>Registration is FREE:</p>
+    <a 
+      href="https://unecsc.tidyhq.com/public/membership_levels/2fbd41198ac1" 
+      className="cyber-button mega-button"
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      Click Here
+    </a>
+
+    <p className="spacer" />
+
+    <p>Non-UNE student/staff members:</p>
+    <p>Click here to become an affiliate member <br></br>(note $20 registration fee required per year)</p>
+    <a 
+      href="https://unecsc.tidyhq.com/public/membership_levels/26c13c2d1f2c"
+      className="cyber-button mega-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Become an Affiliate
+      </a>
+    </div>
+  </div>
     </div>
   );
 }
