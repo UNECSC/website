@@ -22,12 +22,13 @@ function App() {
   };
 
   return (
+    // Using HashRouter to avoid conflicts with static files like /static/chal1.html
     <Router>
       <div style={{ position: 'relative', minHeight: '100vh' }}>
-        {/* Our matrix BG behind everything */}
+        {/* Matrix-style animated background */}
         <AnimatedBG />
 
-        {/* Foreground content */}
+        {/* Foreground UI */}
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Navbar />
           <DropdownMenu onChangeContent={handleChangeContent} />
