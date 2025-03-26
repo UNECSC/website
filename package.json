@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
   "start": "npx serve -s dist",
-  "build": "npx parcel build index.html --no-cache"
+  "build": "npx parcel build index.html --no-cache && cp -r static dist/static"
 },
   "browserslist": [
     ">1%",
