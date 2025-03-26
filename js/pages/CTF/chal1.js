@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Challenge</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Key Challenge</h2>
+        <input type="text" id="keyInput" placeholder="Enter the key">
+        <button onclick="checkKey()">Submit</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Debugging function to log steps
+        function debugLog(message) {
+            console.log(`[DEBUG] ${message}`);
+        }
+
+        // Obfuscated challenge logic
+        const challengeData = {
+            rt: 42,
+            ru: '',
+            
+            xor: function(tf, el) {
+                debugLog(`XOR Input: ${tf}`);
+                debugLog(`XOR Key: ${el}`);
+                const result = tf.split('').map(c => {
+                    const charCode = c.charCodeAt(0);
+                    const xorResult = charCode ^ el;
+                    debugLog(`Char: ${c}, CharCode: ${charCode}, XOR Result: ${xorResult}, Char: ${String.fromCharCode(xorResult)}`);
+                    return String.fromCharCode(xorResult);
+                }).join('');
+                debugLog(`XOR Result: ${result}`);
+                return result;
+            },
+
+            generateChallenge: function() {
+                debugLog('Starting challenge generation');
+                this.ru = '';
+                const steps = [
+                    () => {
+                        this.ru += "MxxW";
+                        debugLog(`Step 1: ru = ${this.ru}`);
+                    },
+                    () => {
+                        this.ru += "\u007fd";
+                        debugLog(`Step 2: ru = ${this.ru}`);
+                    },
+                    () => {
+                        this.ru += "oiyi";
+                        debugLog(`Step 3: ru = ${this.ru}`);
+                    },
+                    () => {
+                        this.ru += "Q~ER";
+                        debugLog(`Step 4: ru = ${this.ru}`);
+                    },
+                    () => {
+                        this.ru += "kn\u001d\u007f";
+                        debugLog(`Step 5: ru = ${this.ru}`);
+                    }
+                ];
+
+                steps.forEach(step => step());
+                const challengeKey = this.xor(this.ru, this.rt);
+                debugLog(`Final Challenge Key: ${challengeKey}`);
+                return challengeKey;
+            }
+        };
+
+        function checkKey() {
+            const input = document.getElementById('keyInput').value;
+            const resultDiv = document.getElementById('result');
+            const expectedKey = challengeData.generateChallenge();
+
+            debugLog(`User Input: ${input}`);
+            debugLog(`Expected Key: ${expectedKey}`);
+
+            if (input === expectedKey) {
+                resultDiv.style.color = 'green';
+                resultDiv.textContent = 'Congrats! You got it!';
+                debugLog('Correct key submitted!');
+            } else {
+                resultDiv.style.color = 'red';
+                resultDiv.textContent = 'Nope, try again!';
+                debugLog('Incorrect key submitted.');
+            }
+        }
+
+        // Show expected key details on page load
+        window.onload = function() {
+            const expectedKey = challengeData.generateChallenge();
+            
+        }
+    </script>
+</body>
+</html>

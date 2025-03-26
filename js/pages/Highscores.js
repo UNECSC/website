@@ -17,7 +17,7 @@ function Highscores() {
 4. [null] - 0 pts
 5. [null] - 0 pts
 
-Last Updated: 01-27-2025
+Last Updated: 23-01-2025
 `;
 
 //1337kitt3n was here.
