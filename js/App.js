@@ -10,7 +10,6 @@ import Contact from './pages/Contact';
 import Highscores from './pages/Highscores';
 import Content from './Content';
 import AnimatedBG from './components/AnimatedBG';
-import chal1 from './pages/CTF/chal1'
 
 function App() {
   const [contentKey, setContentKey] = useState(0);
@@ -40,8 +39,6 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/highscores" element={<Highscores />} />
-              /* CTF */
-              <Route path="/ctf-chal" element={<chal1 />} />
             </Routes>
           </Content>
         </div>
