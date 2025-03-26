@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 import Highscores from './pages/Highscores';
 import Content from './Content';
 import AnimatedBG from './components/AnimatedBG';
-import chal1 from '.pages/CTF/chal1'
+import chal1 from './pages/CTF/chal1'
 
 function App() {
   const [contentKey, setContentKey] = useState(0);
