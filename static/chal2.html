@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNECSC - OTP Reuse Attack Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 60px;
+            resize: vertical;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
+        }
+        .output pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+        .tab.active {
+            border-bottom: 2px solid #3498db;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        .code pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>UNECSC - OTP Reuse Attack Demo</h1>
+    
+    <div class="tabs">
+        <div class="tab active" onclick="openTab('demo')">Demo</div>
+        <div class="tab" onclick="openTab('about')">About</div>
+        <div class="tab" onclick="openTab('code')">Code</div>
+    </div>
+
+    <div id="demo" class="tab-content active">
+        <div class="card">
+            <h2>Generate Ciphertexts with Reused Pad</h2>
+            <div class="input-group">
+                <label for="plaintext1">Plaintext 1:</label>
+                <input type="text" id="plaintext1" value="">
+            </div>
+            <div class="input-group">
+                <label for="plaintext2">Plaintext 2:</label>
+                <input type="text" id="plaintext2" value="UNECSC{}">
+            </div>
+            <button onclick="generateCiphertexts()">Generate Ciphertexts</button>
+            
+            <div id="generateOutput" class="output" style="display: none;">
+                <pre id="generateOutputText"></pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Crack Reused OTP</h2>
+            <div class="input-group">
+                <label for="c1">Ciphertext 1 (hex):</label>
+                <input type="text" id="c1">
+            </div>
+            <div class="input-group">
+                <label for="c2">Ciphertext 2 (hex):</label>
+                <input type="text" id="c2">
+            </div>
+            <div class="input-group">
+                <label for="known_p1">Known Plaintext 1:</label>
+                <input type="text" id="known_p1" value="BABABOOEYBABABOOEY">
+            </div>
+            <button onclick="crackOTP()">Recover Plaintext 2</button>
+            
+            <div id="crackOutput" class="output" style="display: none;">
+                <pre id="crackOutputText"></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="tab-content">
+        <div class="card">
+            <h2>About OTP Reuse Attack</h2>
+            <p>The One-Time Pad (OTP) is theoretically unbreakable if used correctly. However, if the same pad is reused for multiple messages, it becomes vulnerable to attacks.</p>
+            <p>This demo illustrates how reusing an OTP key compromises the security of the encryption:</p>
+            <ol>
+                <li>Two plaintexts (P1 and P2) are encrypted with the same OTP key, producing ciphertexts C1 and C2.</li>
+                <li>If an attacker knows one plaintext (P1) and both ciphertexts (C1 and C2), they can recover the other plaintext (P2).</li>
+            </ol>
+            <p>The attack works because:</p>
+            <pre>C1 ⊕ C2 = (P1 ⊕ Key) ⊕ (P2 ⊕ Key) = P1 ⊕ P2 ⊕ Key ⊕ Key = P1 ⊕ P2</pre>
+            <p>Since XOR with the same value twice cancels out (Key ⊕ Key = 0), and any value XORed with 0 is itself.</p>
+            <p>Then, if we know P1, we can recover P2 by calculating:</p>
+            <pre>(C1 ⊕ C2) ⊕ P1 = (P1 ⊕ P2) ⊕ P1 = P1 ⊕ P1 ⊕ P2 = P2</pre>
+            <p>This demonstrates why OTP keys must never be reused.</p>
+        </div>
+    </div>
+
+    <div id="code" class="tab-content">
+        <div class="card">
+            <h2>JavaScript Implementation</h2>
+            <div class="code">
+                <pre>
+// Convert string to byte array
+function stringToBytes(str) {
+    const bytes = new Uint8Array(str.length);
+    for (let i = 0; i < str.length; i++) {
+        bytes[i] = str.charCodeAt(i);
+    }
+    return bytes;
+}
+
+// Convert byte array to string
+function bytesToString(bytes) {
+    return Array.from(bytes).map(byte => String.fromCharCode(byte)).join('');
+}
+
+// Convert hex string to byte array
+function hexToBytes(hex) {
+    const bytes = new Uint8Array(hex.length / 2);
+    for (let i = 0; i < hex.length; i += 2) {
+        bytes[i / 2] = parseInt(hex.substr(i, 2), 16);
+    }
+    return bytes;
+}
+
+// Convert byte array to hex string
+function bytesToHex(bytes) {
+    return Array.from(bytes).map(byte => byte.toString(16).padStart(2, '0')).join('');
+}
+
+// XOR two byte arrays
+function xorBytes(a, b) {
+    if (a.length !== b.length) {
+        throw new Error("Byte arrays must be the same length");
+    }
+    const result = new Uint8Array(a.length);
+    for (let i = 0; i < a.length; i++) {
+        result[i] = a[i] ^ b[i];
+    }
+    return result;
+}
+
+// Generate random bytes
+function getRandomBytes(length) {
+    const bytes = new Uint8Array(length);
+    window.crypto.getRandomValues(bytes);
+    return bytes;
+}
+
+// Generate ciphertexts C1 and C2 using the same OTP
+function generatePair(p1, p2) {
+    const p1Bytes = stringToBytes(p1);
+    const p2Bytes = stringToBytes(p2);
+    
+    if (p1Bytes.length !== p2Bytes.length) {
+        throw new Error("Plaintexts must be the same length for OTP reuse.");
+    }
+    
+    const key = getRandomBytes(p1Bytes.length);
+    const c1 = xorBytes(p1Bytes, key);
+    const c2 = xorBytes(p2Bytes, key);
+    
+    return {
+        c1: bytesToHex(c1),
+        c2: bytesToHex(c2),
+        key: bytesToHex(key)
+    };
+}
+
+// Recover plaintext 2 using reused OTP and known plaintext 1
+function crackReusedPad(c1Hex, c2Hex, knownP1) {
+    const c1 = hexToBytes(c1Hex);
+    const c2 = hexToBytes(c2Hex);
+    const p1 = stringToBytes(knownP1);
+    
+    if (!(c1.length === c2.length && c1.length === p1.length)) {
+        throw new Error("Ciphertexts and plaintext must be the same length.");
+    }
+    
+    const xorResult = xorBytes(c1, c2);
+    const p2 = xorBytes(xorResult, p1);
+    
+    return bytesToString(p2);
+}</pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Convert string to byte array
+        function stringToBytes(str) {
+            const bytes = new Uint8Array(str.length);
+            for (let i = 0; i < str.length; i++) {
+                bytes[i] = str.charCodeAt(i);
+            }
+            return bytes;
+        }
+
+        // Convert byte array to string
+        function bytesToString(bytes) {
+            return Array.from(bytes).map(byte => String.fromCharCode(byte)).join('');
+        }
+
+        // Convert hex string to byte array
+        function hexToBytes(hex) {
+            const bytes = new Uint8Array(hex.length / 2);
+            for (let i = 0; i < hex.length; i += 2) {
+                bytes[i / 2] = parseInt(hex.substr(i, 2), 16);
+            }
+            return bytes;
+        }
+
+        // Convert byte array to hex string
+        function bytesToHex(bytes) {
+            return Array.from(bytes).map(byte => byte.toString(16).padStart(2, '0')).join('');
+        }
+
+        // XOR two byte arrays
+        function xorBytes(a, b) {
+            if (a.length !== b.length) {
+                throw new Error("Byte arrays must be the same length");
+            }
+            const result = new Uint8Array(a.length);
+            for (let i = 0; i < a.length; i++) {
+                result[i] = a[i] ^ b[i];
+            }
+            return result;
+        }
+
+        // Generate random bytes
+        function getRandomBytes(length) {
+            const bytes = new Uint8Array(length);
+            window.crypto.getRandomValues(bytes);
+            return bytes;
+        }
+
+        // Generate ciphertexts C1 and C2 using the same OTP
+        function generatePair(p1, p2) {
+            const p1Bytes = stringToBytes(p1);
+            const p2Bytes = stringToBytes(p2);
+            
+            if (p1Bytes.length !== p2Bytes.length) {
+                throw new Error("Plaintexts must be the same length for OTP reuse.");
+            }
+            
+            const key = getRandomBytes(p1Bytes.length);
+            const c1 = xorBytes(p1Bytes, key);
+            const c2 = xorBytes(p2Bytes, key);
+            
+            return {
+                c1: bytesToHex(c1),
+                c2: bytesToHex(c2),
+                key: bytesToHex(key)
+            };
+        }
+
+        // Recover plaintext 2 using reused OTP and known plaintext 1
+        function crackReusedPad(c1Hex, c2Hex, knownP1) {
+            const c1 = hexToBytes(c1Hex);
+            const c2 = hexToBytes(c2Hex);
+            const p1 = stringToBytes(knownP1);
+            
+            if (!(c1.length === c2.length && c1.length === p1.length)) {
+                throw new Error("Ciphertexts and plaintext must be the same length.");
+            }
+            
+            const xorResult = xorBytes(c1, c2);
+            const p2 = xorBytes(xorResult, p1);
+            
+            return bytesToString(p2);
+        }
+
+        // UI Functions
+        function openTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            // Deactivate all tabs
+            const tabs = document.getElementsByClassName("tab");
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+            
+            // Show the selected tab content
+            document.getElementById(tabName).classList.add("active");
+            
+            // Find and activate the clicked tab
+            const allTabs = document.getElementsByClassName("tab");
+            for (let i = 0; i < allTabs.length; i++) {
+                if (allTabs[i].textContent.toLowerCase() === tabName.toLowerCase() ||
+                    (allTabs[i].textContent === "Demo" && tabName === "demo") ||
+                    (allTabs[i].textContent === "About" && tabName === "about") ||
+                    (allTabs[i].textContent === "Code" && tabName === "code")) {
+                    allTabs[i].classList.add("active");
+                }
+            }
+        }
+
+        function generateCiphertexts() {
+            try {
+                const p1 = document.getElementById("plaintext1").value;
+                const p2 = document.getElementById("plaintext2").value;
+                
+                if (p1.length !== p2.length) {
+                    throw new Error("Both plaintexts must be the same length!");
+                }
+                
+                const result = generatePair(p1, p2);
+                
+                // Update the crack inputs with generated values
+                document.getElementById("c1").value = result.c1;
+                document.getElementById("c2").value = result.c2;
+                document.getElementById("known_p1").value = p1;
+                
+                // Display the output
+                const outputText = 
+                `[*] Generating ciphertexts with reused pad...
+Ciphertext 1: ${result.c1}
+Ciphertext 2: ${result.c2}
+OTP Pad     : ${result.key}`;
+                
+                document.getElementById("generateOutputText").textContent = outputText;
+                document.getElementById("generateOutput").style.display = "block";
+            } catch (error) {
+                document.getElementById("generateOutputText").textContent = "Error: " + error.message;
+                document.getElementById("generateOutput").style.display = "block";
+            }
+        }
+
+        function crackOTP() {
+            try {
+                const c1Hex = document.getElementById("c1").value;
+                const c2Hex = document.getElementById("c2").value;
+                const knownP1 = document.getElementById("known_p1").value;
+                
+                const recovered = crackReusedPad(c1Hex, c2Hex, knownP1);
+                
+                // Display the output
+                const outputText = 
+                `[*] Cracking ciphertext 2 using known plaintext 1...
+Recovered Plaintext 2: ${recovered}`;
+                
+                document.getElementById("crackOutputText").textContent = outputText;
+                document.getElementById("crackOutput").style.display = "block";
+            } catch (error) {
+                document.getElementById("crackOutputText").textContent = "Error: " + error.message;
+                document.getElementById("crackOutput").style.display = "block";
+            }
+        }
+
+        // Initialize with example data
+        window.onload = function() {
+            document.getElementById("plaintext1").value = "";
+            document.getElementById("plaintext2").value = "";
+            document.getElementById("known_p1").value = "";
+        };
+    </script>
+</body>
+</html>
