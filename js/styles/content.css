@@ -391,6 +391,6 @@
 }
 
 @keyframes cta-glow-pulse {
-  0%, 100% { opacity: 0.4; }
+  0%, 100% { opacity: 0.5; }
   50% { opacity: 0.9; }
 }
