@@ -18,15 +18,18 @@
   color: #e0e0ff;
   background: var(--dark-bg);
   backdrop-filter: blur(8px) brightness(0.9);
-  border: 2px solid var(--neon-pink);
+  border: 2px solid var(--neon-cyan); /* Swapped from pink */
   border-radius: 12px;
-  box-shadow: 0 0 25px var(--neon-pink);
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.3),   /* Subtle neon cyan glow */
+    0 0 0 12px rgba(0, 0, 0, 0.85);    /* Thick black surround */
   text-align: center;
   min-height: 80vh;
   position: relative;
   z-index: 10;
   transition: all 0.4s ease;
 }
+
 
 .content.collapsed {
   max-height: 0;
