@@ -1,19 +1,11 @@
-
-/* /styles/animatedBG.css */
 .animated-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -9999; /* behind everything else */
-    pointer-events: none; /* don’t block user clicks */
-  }
-  
-  
-
-
-/* Keyframes for the background animation */
-@keyframes bgAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 5, 20, 0.85);
+  backdrop-filter: blur(2px);
 }

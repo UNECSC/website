@@ -1,9 +1,7 @@
-// /js/pages/Highscores.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Highscores() {
-    console.log('Highscores component loaded');
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
@@ -11,7 +9,7 @@ function Highscores() {
   const highscoresData = `
 === CTF HIGHSCORES ===
 
-1. [1337kitt3ns] - 69 pts
+1. [null] - 0 pts
 2. [null] - 0 pts
 3. [null] - 0 pts
 4. [null] - 0 pts
@@ -20,10 +18,6 @@ function Highscores() {
 Last Updated: 23-01-2025
 `;
 
-//1337kitt3n was here.
-//Hmmm how can I get on that highscores...?
-//UNECSC{l3f7mym4rk}
-
   useEffect(() => {
     const typingInterval = setInterval(() => {
       if (currentIndex < highscoresData.length) {
@@ -31,18 +25,17 @@ Last Updated: 23-01-2025
         setCurrentIndex(prev => prev + 1);
       } else {
         clearInterval(typingInterval);
-        // Start cursor blink after typing completes
         setInterval(() => {
           setShowCursor(prev => !prev);
         }, 500);
       }
-    }, 50); // Typing speed
+    }, 50);
 
     return () => clearInterval(typingInterval);
   }, [currentIndex]);
 
   return (
-    <div className="content highscores">
+    <div className="content highscores-page">
       <div className="terminal-container">
         <pre className="terminal-output">
           {displayText}
@@ -51,9 +44,7 @@ Last Updated: 23-01-2025
       </div>
 
       <div className="highscores-actions">
-        <Link to="/events" className="cyber-button">
-          ← Return to Events
-        </Link>
+        <Link to="/events" className="neon-button">← Return to Events</Link>
       </div>
     </div>
   );

@@ -24,8 +24,8 @@ function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="navbar" ref={navRef}>
-      <h1>UNECSC</h1>
+    <nav className="navbar cyberpunk-nav" ref={navRef}>
+  <h1 className="neon-header">UNECSC</h1>
       <div 
         className={`hamburger ${isOpen ? 'open' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
