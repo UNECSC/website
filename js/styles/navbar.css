@@ -1,34 +1,34 @@
-/* Navbar Container */
+/* === Navbar Container === */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: rgba(18, 18, 38, 0.95);
   padding: 0.75rem 1.5rem;
-  border-bottom: 2px solid #ff00ff;
-  box-shadow: 0 0 10px #8e2de2;
+  border-bottom: 2px solid var(--neon-cyan);
+  box-shadow: 0 0 12px var(--neon-blue);
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(6px);
 }
 
-/* Site Title */
+/* === Navbar Title === */
 .navbar h1 {
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2.2rem;
   margin: 0;
-  color: #ff00ff;
+  color: var(--neon-cyan);
   text-shadow:
-    0 0 5px #ff00ff,
-    0 0 10px #ff00ff,
-    0 0 15px #ff00ff;
+    0 0 5px var(--neon-cyan),
+    0 0 10px var(--neon-blue),
+    0 0 15px var(--neon-cyan);
   animation: glitch-text 2s infinite;
 }
 
-/* Glitch animation for title (optional but cool) */
+/* === Glitch Animation === */
 @keyframes glitch-text {
   0% { transform: none; }
   20% { transform: translateX(-1px) rotate(0.5deg); }
@@ -38,7 +38,7 @@
   100% { transform: none; }
 }
 
-/* Hamburger Button */
+/* === Hamburger Button === */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -52,9 +52,9 @@
 .hamburger .bar {
   width: 100%;
   height: 3px;
-  background: #00ffff;
+  background: var(--neon-cyan);
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px #00ffff;
+  box-shadow: 0 0 5px var(--neon-cyan);
 }
 
 .hamburger.open .bar:nth-child(1) {
@@ -69,16 +69,16 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Dropdown Menu Container */
+/* === Dropdown Menu === */
 .dropdown-menu {
   position: absolute;
   top: 70px;
   right: 20px;
-  background: rgba(30, 0, 50, 0.95);
-  border: 1px solid #ff00ff;
+  background: rgba(0, 30, 50, 0.95);
+  border: 1px solid var(--neon-cyan);
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 20px #ff00ff;
+  box-shadow: 0 0 20px var(--neon-cyan);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -87,26 +87,25 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Animation for dropdown appearance */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Dropdown Links */
+/* === Dropdown Links === */
 .dropdown-menu a {
-  color: #ff00ff;
+  color: var(--neon-cyan);
   text-decoration: none;
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: all 0.3s ease;
-  text-shadow: 0 0 4px #ff00ff;
+  text-shadow: 0 0 4px var(--neon-blue);
 }
 
-/* Hover State */
+/* === Hover State === */
 .dropdown-menu a:hover {
-  background-color: #ff00ff;
+  background-color: var(--neon-cyan);
   color: #0f0c29;
-  box-shadow: 0 0 10px #ff00ff;
+  box-shadow: 0 0 10px var(--neon-cyan);
 }
