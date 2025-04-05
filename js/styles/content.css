@@ -22,7 +22,7 @@
   border-radius: 12px;
   box-shadow:
     0 0 12px rgba(0, 255, 255, 0.3),   /* Subtle neon cyan glow */
-    0 0 0 12px rgba(0, 0, 0, 0.85);    /* Thick black surround */
+    0 0 0 16px rgba(0, 0, 0, 0.2);    /* Thick black surround */
   text-align: center;
   min-height: 80vh;
   position: relative;
