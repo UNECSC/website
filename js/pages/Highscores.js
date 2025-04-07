@@ -9,11 +9,11 @@ function Highscores() {
   const highscoresData = `
 === CTF HIGHSCORES ===
 
-1. [null] - 0 pts
-2. [null] - 0 pts
-3. [null] - 0 pts
-4. [null] - 0 pts
-5. [null] - 0 pts
+1. [z3r0kn0wl3dg3] - 3782 pts
+2. [Smile] - 2493 pts
+3. [viteky] - 0 pts
+4. [Gödel] - 0 pts
+5. [Cats] - 0 pts
 
 Last Updated: 23-01-2025
 `;
