@@ -29,7 +29,7 @@ function Contact() {
             <FontAwesomeIcon icon={faFileSignature} className="contact-icon green" />
             <div className="contact-info">
               <div className="role-title">Secretary</div>
-              <a href="mailto:secretary@unecsc.com">Lachlan Jarret</a>
+              <a href="mailto:secretary@unecsc.com">Lachlan Jerrett</a>
             </div>
           </div>
           <div className="contact-card">
