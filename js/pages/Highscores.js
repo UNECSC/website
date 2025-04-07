@@ -15,7 +15,7 @@ function Highscores() {
 4. [Gödel] - 0 pts
 5. [Cats] - 0 pts
 
-Last Updated: 23-01-2025
+Last Updated: 07-04-2025
 `;
 
   useEffect(() => {
