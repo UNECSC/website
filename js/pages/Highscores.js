@@ -11,9 +11,9 @@ function Highscores() {
 
 1. [z3r0kn0wl3dg3] - 3782 pts
 2. [Smile] - 2493 pts
-3. [viteky] - 0 pts
-4. [Gödel] - 0 pts
-5. [Cats] - 0 pts
+3. [viteky] - 1281 pts
+4. [Gödel] - 396 pts
+5. [Cats] - 331 pts
 
 Last Updated: 07-04-2025
 `;
